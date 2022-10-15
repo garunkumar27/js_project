@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- Inputs:1=> Click What Operation(+,-,*,/)
+                    Range of Numbers
+         Inputs:2=> Solution given by user for the problems 
+        Outputs=>   Browser give 8 Problems based on input given by user.
+                  -->
+    <section class="container">
+        <div class="head">
+            
+            <div>
+                <label for="">Operation
+                    <select name="" id="operation">
+                        <option value="">Choose Any One</option>
+                        <option value="add">Addition</option>
+                        <option value="sub">Subtraction</option>
+                        <option value="multiplication">Multiplication</option>
+                        <option value="division">Division</option>
+                    </select>
+                </label>
+            </div>
+
+            <div>
+                <label for="">Range
+                    <select name="" id="range">
+                        <option value="">Choose Range</option>
+                        <option value="9">1 to 9</option>
+                        <option value="19">1 to 19</option>
+                        <option value="29">1 to 29</option>
+                        <option value="39">1 to 39</option>
+                        <option value="49">1 to 49</option>
+                        <option value="99">1 to 99</option>
+
+                    </select>
+                </label>
+            </div>
+
+            <div>
+                <button id="start">Click Me!!</button>
+                <button id="calculate"disabled>Calculate</button>
+            </div>
+        </div>
+
+        <div class="problemwh">
+            <div class="problems"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
