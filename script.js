@@ -20,26 +20,30 @@ function stage1Oprtn() {
     enableCalculate();
 }
 function stage2Operation(){
-    console.log("Hiii");
-    let probele =document.getElementsByClass("problem")[0];
+    // console.log("Hiii");
+    let probele =document.getElementsByClassName("problem"),mark=0;
+    // console.log(probele.length);
     for(i=0;i<probele.length;i++){
-        console.log(probele);
-        let numb1Ele,numb2Ele,numbValue1,numbValue2,expectedAns,actual,actualAns,mark=0,
-        prob1Ele=probele[i]
+        // console.log(probele[i]);
+        // console.log(document);
+       let prob1Ele=probele[i],
+        numb1Ele,numb2Ele,numbValue1,numbValue2,expectedAns,actual,actualAns,
+       
         // To find Operation
-        oprEle=prob1Ele.getElementsByClassName("oprtnEle")[0]``,
-        opType=oprEle.innerHTML;
-        console.log(opType);
+        oprEle=prob1Ele.getElementsByClassName("operations")[0],
+        opType=oprEle.innerText;
+    // console.log(oprEle);
+        // console.log(opType);
 
         // Get Number1
         numb1Ele=prob1Ele.getElementsByClassName("number1")[0];
-        numbValue1=parseInt(numb1Ele.innerHTML);
-        console.log(numbEle1);
+        numbValue1=parseInt(numb1Ele.innerText);
+        console.log(numbValue1);
 
         // Get Number2
         numb2Ele=prob1Ele.getElementsByClassName("number2")[0];
-        numbValue2=parseInt(numb2Ele.innerHTML);
-        console.log(numb2Ele);
+        numbValue2=parseInt(numb2Ele.innerText);
+        console.log(numbValue2);
 
         // Find Expected answer
         if(opType=="+"){
@@ -55,7 +59,7 @@ function stage2Operation(){
             expectedAns=numbValue1/numbValue2;
         }
 
-    //Get Actual Answer 
+    // //Get Actual Answer 
         actual=prob1Ele.getElementsByClassName("answer")[0];
         actualAns=(actual.value);
         console.log(actualAns);
@@ -65,8 +69,9 @@ function stage2Operation(){
             mark++;
         }
         //if true add mark
-        alert("Your Mark is"+mark)
+        
     }
+    alert("Your Mark is "+mark)
     
 }
 
