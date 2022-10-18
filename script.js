@@ -24,7 +24,7 @@ function stage2Operation(){
     let probele =document.getElementsByClassName("problem"),mark=0;
     // console.log(probele.length);
     for(i=0;i<probele.length;i++){
-        // console.log(probele[i]);
+        console.log(probele[i]);
         // console.log(document);
        let prob1Ele=probele[i],
         numb1Ele,numb2Ele,numbValue1,numbValue2,expectedAns,actual,actualAns,
@@ -38,12 +38,12 @@ function stage2Operation(){
         // Get Number1
         numb1Ele=prob1Ele.getElementsByClassName("number1")[0];
         numbValue1=parseInt(numb1Ele.innerText);
-        console.log(numbValue1);
+        // console.log(numbValue1);
 
         // Get Number2
         numb2Ele=prob1Ele.getElementsByClassName("number2")[0];
         numbValue2=parseInt(numb2Ele.innerText);
-        console.log(numbValue2);
+        // console.log(numbValue2);
 
         // Find Expected answer
         if(opType=="+"){
@@ -62,8 +62,8 @@ function stage2Operation(){
     // //Get Actual Answer 
         actual=prob1Ele.getElementsByClassName("answer")[0];
         actualAns=(actual.value);
-        console.log(actualAns);
-        console.log(expectedAns);
+        // console.log(actualAns);
+        // console.log(expectedAns);
         // Comparing Answers
         if(expectedAns==actualAns){
             mark++;
